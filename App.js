@@ -21,17 +21,14 @@ function App() {
             currentRecipes.filter((recipe, index) => index !== indexToDelete)
         );
 
-    return ( <
-        div className = "App" >
-        <
-        header > < h1 > Delicious Food Recipes < /h1></header >
-        <
-        RecipeList recipes = { recipes }
-        deleteRecipe = { deleteRecipe }
-        /> <
-        RecipeCreate createRecipe = { createRecipe }
-        />    < /
-        div >
+    return ( 
+    <div className = "App">
+        <header> 
+        <h1>Delicious Food Recipes</h1></header>
+        <RecipeList recipes = { recipes }
+        deleteRecipe = { deleteRecipe } /> 
+        <RecipeCreate createRecipe = { createRecipe } />    
+        </div>
 
     );
 }
